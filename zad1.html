@@ -6,185 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    
-        <style>
-        body{
-            font-family: "Lucida Console", Monaco, monospace;
-            margin: 0;
-        }
-        .lijevo{
-            width: 45%;
-            position: fixed;
-        }
-        .glavna{
-            margin-left: 45%;
-            padding-left: 13px;
-            padding-right: 13px;
-
-        }
-        .bw{
-            width: 100%;
-            height: 100%;
-        }
-        .navigacija{
-            position: fixed;
-            float: top;
-            width: 55%;
-            font-size: 0.9em;
-            padding: 0;
-            margin: 0;
-        }
-        .navbar{
-            width: 55%;
-            position: inherit;
-            height: inherit;
-        }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            position: inherit;
-            border-radius: 3%;
-        }
-
-        li {
-            float: left;
-            border-right:1px solid #bbb;
-            border-radius: 3%;
-        }
-
-        li:last-child {
-            border-right: none;
-        }
-
-        li a {
-            display: block;
-            border-radius: 3%;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover{
-            background-color: #111;
-        }
-
-        .active {
-            background-color: #4CAF50;
-        }
-        .cv{
-            position: relative;
-            padding-top: 10%;
-            margin-top: 5%;
-        }
-        .naslov{
-            text-align: centar;
-            font-size: 2em;
-            display: block;
-            padding: 128px 16px;
-            height: 100%;
-
-        }
-        
-        div:after{
-            
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        @media only screen and (max-width: 768px){
-            body{
-            font-family: "Lucida Console", Monaco, monospace;
-            margin: 0;
-            }
-            .lijevo{
-                width: 100%;
-                display: block;
-                position: relative;
-                margin-bottom: 20px;
-                
-            }
-            .glavna{
-                margin-left: 0;
-                margin-top: 10px;
-                display: block;
-                position: relative;
-            }
-            
-            .bw{
-                width: 100%;
-                height: 100%;
-            }
-            .navigacija{
-                position: sticky;
-                float: top;
-                width: 100%;
-                font-size: 0.9em;
-                padding: 0;
-                margin: 0;
-            }
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-                position: inherit;
-                border-radius: 3%;
-            }
-
-            li {
-                float: left;
-                border-right:1px solid #bbb;
-                border-radius: 3%;
-            }
-
-            li:last-child {
-                border-right: none;
-            }
-
-            li a {
-                display: block;
-                border-radius: 3%;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-            li a:hover{
-                background-color: #111;
-            }
-
-            .active {
-                background-color: #4CAF50;
-            }
-            .cv{
-                position: relative;
-                padding-top: 10%;
-                margin-top: 5%;
-            }
-            .naslov{
-                text-align: center;
-                display: block
-
-            }
-            .naslov{
-                padding: 128px 16px;
-            }
-            div:after{
-                
-                content: "";
-                display: table;
-                clear: both;
-            }
-        }
-
-        </style>
+        <link rel="stylesheet" href="style1.css" type="text/css">
     </head>
     <body>
         <div id="slika" class="lijevo r">
@@ -195,7 +17,7 @@
                 <ul class="navbar">
                         <li><a href="#nas" class="active navc"><i class="fa fa-user"></i> HOME</a></li>
                         <li><a href="#t3" class="navc"><i class="fas fa-award"></i> CV</a></li>
-                        <li><a href="#t4" class="navc"><i class="fas fa-brush"></i> Vjestine</a></li>
+                        <li><a href="#t4" class="navc"><i class="fas fa-brush"></i> Skills</a></li>
                         <li style="float:right"><a href="" class="navc" ><i class="fa fa-file"></i> Portfolio</a></li>
                 </ul>
             </div>
@@ -206,30 +28,35 @@
                     </header>
             </div>
             
-            <div  class="cv r">
+            <div id="t3"  class="cv r">
                     
                     <h1>Curriculum Vitae</h1>
                     <h2>Petar Ćetković</h2>
-                    <p>Datum rodjenja: 01/07/1998 <br>Pol: Muški</p>
-                    <h3>Lični podaci</h3>
-                    <ul>
-                        <li><span>Adresa: </span>Dajbabe bb, Podgorica, Crna Gora</li>
-                        <li><span>Email: </span>pcetkovic007@gmail.com</li>
-                        <li><span>Br. mob: </span>067/584/934</li>
-                        <li><span>Linkedin acc: </span><a  target="_blank" href="https://www.linkedin.com/in/petar-%C4%87etkovi%C4%87-62247a143/">Petar Cetkovic - Linkedin</a></li>
+                    <p>Datum rodjenja: <span style="text-decoration: underline">01/07/1998</span><br>Pol: <span style="text-decoration: underline">Muški</span> </p>
+                    <h3 id="lp" class="cvn">Lični podaci</h3>
+                    <ul class="licni">
+                        <li><i class="fas fa-home"></i> Dajbabe bb, Podgorica, Crna Gora <br></li>
+                        <li><i class="fas fa-envelope"></i> pcetkovic007@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> 067/584/934</li>
+                        <li><i class="fab fa-linkedin"></i> <a  target="_blank" href="https://www.linkedin.com/in/petar-%C4%87etkovi%C4%87-62247a143/">Petar Cetkovic - Linkedin</a></li>
                     </ul>
-                    <h3>Lista programskih jezika: </h3>
-                    <ol type="I">
-                        <li><strong>Pascal</strong></li>
-                        <li>Java</li>
-                        <li>C/C++</li>
-                        <li>Python</li>
+                    <h3 class="cvn">Lista programskih jezika: </h3>
+                    <div>
+                    <ol class="list-type3">
+                        <li><a href="https://www.freepascal.org/" target="_blank"><strong>Pascal</strong></a></li><br>
+                        <li><a href="https://www.java.com/" target="_blank">Java  </a></li><br>
+                        <li><a href="https://isocpp.org/" target="_blank">C/C++</a></li><br>
+                        <li><a href="https://www.python.org/" target="_blank">Python</a></li>
                     </ol>
+                    </div>
                     <h3>Kursevi/Seminari</h3>
                     <ul style="list-style-type: square">
                         <li>Kurs prve pomoći, 2015</li>
                         <li>Budi spreman za EU vrijednosti, studijska posjeta Zagrebu, 2016</li>
                     </ul>
+
+            </div>
+            <div id="t4" class="skil">
 
             </div>
 
