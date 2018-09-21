@@ -1,0 +1,106 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title>Petar Ćetković - PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css" >
+
+    <style>
+        body{
+            margin: 0;
+            font-family: "Lucida Console", Monaco, monospace;
+        }
+        .container0{
+            background-color: #333;
+            text-align: center;
+            font-family: "Lucida Console", Monaco, monospace;
+            color: antiquewhite;
+            background-image: url(hed.jpg);
+            background-attachment: fixed;
+            background-size: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .container0 h1{
+            font-size: 3em;
+        }
+        .container1{
+            display: flex;
+            flex: 25%;
+            width: 35%;
+            flex-direction: column;
+        }
+        .container1>div {
+            background-color: rgb(95, 89, 89);
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            flex: 1
+            
+        }
+                
+        .cssmenu {
+        flex: 25%;
+        width: 25%;
+        background: #333;
+        background-image: url(hed2.jpg);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 12em;
+        }
+        .cssmenu li {
+        font: 67.5% ;
+        margin: 0;
+        padding-bottom: 30px;
+        list-style: none;
+        }
+        .cssmenu a {
+        background: #333;
+        border-bottom: 1px solid #393939;
+        color: #ccc;
+        display: block;
+        margin: 0;
+        padding: 8px 12px;
+        text-decoration: none;
+        font-weight: normal;
+        }
+        .cssmenu a:hover {
+        background: #21af2d url("hover.gif") left center no-repeat;
+        color: #fff;
+        padding-bottom: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container0">
+        <header>
+                <div>
+                        <h1 >Petar Ćetković</h1>
+                </div>
+                    <div>
+                        <h3>Programmer and musician</h3>
+                    </div>
+        </header>
+        
+    </div>
+
+    <div id="sidebar" class="container1">
+        <div class='cssmenu'>
+            <ul>
+                <li class='active'><a href='#'><span>Home</span></a></li>
+                <li><a href='#'><span>Products</span></a></li>
+                <li><a href='#'><span>Company</span></a></li>
+                <li class='last'><a href='#'><span>Contact</span></a></li>
+        </ul>
+        </div>
+
+    </div>
+    <div id="content" class="container2">
+        <h1>Content:</h1>
+    </div>
+    
+</body>
+</html>
