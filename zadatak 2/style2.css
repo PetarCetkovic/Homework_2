@@ -1,5 +1,6 @@
 body{
         margin: 0;
+        background-color: whitesmoke;
         font-family: "Lucida Console", Monaco, monospace;
     }
     .container0{
@@ -29,14 +30,41 @@ body{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        flex-basis: 0%;
         background-color: whitesmoke;
-        margin-top: -641px;
-        padding:32px 32px;
+        margin-top: -655px;
         margin-left: 25%;
         width: 75%;
     }
-
+    .naslovna{
+        width: 100%;
+        height: 100%;
+    }
+    .container2 h1{
+        text-decoration: underline;
+    }
+    .unutra{padding-left: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    padding-right: 20px;}
+    .naslov1 p{
+        border-radius: 10px;
+        padding: 32px 32px;
+        line-height: 30px;
+        box-shadow: rgb(58, 55, 55) 0px 0px 40px;
+        background-color: #8d8a8a;
+    }
+    .naslov1 p span{
+        background-color: black;
+        color: wheat;
+        border-radius: 6px;
+        padding: 3px;
+    }
+    #sajtovi{
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     .navbar {
     height: inherit;
     position: inherit;
@@ -79,7 +107,6 @@ body{
         margin-left: 25%;
         width: 75%;
         line-height: 50px;
-        padding: 32px 32px;
         background-color: rgb(233, 233, 233)
     }
     h3 a{
@@ -102,7 +129,71 @@ body{
     .linkovi a:hover{
         opacity: 0.7;
     }
-
+    .list-type1{
+        width: 100%;
+        border-radius: 10px;
+        line-height: 30px;
+        box-shadow: rgb(58, 55, 55) 0px 0px 40px;
+        background-color: #8d8a8a;
+    }
+    .list-type1 h2{padding-left: 20px;padding-top: 10px;}
+        
+    .list-type1 ol{
+        width: inherit;
+        counter-reset: li;
+        list-style: none;
+        font-size: 15px;
+        font-family: 'Raleway', sans-serif;
+        padding: 0;
+        margin-bottom: 4em;
+    }
+    .list-type1 ol ol{
+        margin: 0 0 0 2em;
+    }
+        
+    .list-type1 a{
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em 2em;
+        *padding: .4em;
+        margin: .5em 0;
+        background: rgb(72, 73, 72);
+        line-height: 1.3em;
+        color: rgb(253, 253, 253);
+        left: 30px;
+        width: 70%;
+        height: 50px;
+        text-decoration: none;
+        -moz-border-radius: .3em;
+        -webkit-border-radius: .3em;
+        border-radius: 10em;
+        transition: all .2s ease-in-out;
+    }
+        
+    .list-type1 a:hover{
+        background: #d6d4d4;
+        text-decoration:none;
+        transform: scale(1.1);
+    }
+        
+    .list-type1 a:before{
+        position: absolute;
+        left: -1.3em;
+        top: 50%;
+        margin-top: -1.3em;
+        background:#93C775;
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        border: .3em solid #fff;
+        text-align: center;
+        font-weight: bold;
+        -moz-border-radius: 2em;
+        -webkit-border-radius: 2em;
+        border-radius: 2em;
+        color:#FFF;
+    }
+    
 
     
     @media only screen and (max-width: 768px){
@@ -125,14 +216,22 @@ body{
         .navi{
             margin: 0;
             padding: 0;
+            text-align: center;
             width: 100%;
         }
         .container2{
             margin-left: 0;
             width: 100%;
+            margin-top: 0;
+
+        }
+        .futer{
+            width: 100%;
+            margin: 0;
         }
         .navi li {
             float: left;
+            text-align: center;
             width: 24%;
             border-right:1px solid #bbb;
             border-radius: 3%;
@@ -144,6 +243,7 @@ body{
 
         .navi li a {
             width: 100%;
+            text-align: center;
             display: block;
             border-radius: 3%;
             color: white;
